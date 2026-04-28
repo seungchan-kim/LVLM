@@ -20,11 +20,15 @@ RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir \
         "numpy<2" \
         torch==2.9.1 \
+	torchvision \
         transformers \
         accelerate \
         bitsandbytes \
         pillow \
-        opencv-python
+        opencv-python \
+	decord \
+	einops \
+	timm
 
 SHELL ["/bin/bash", "-c"]
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
