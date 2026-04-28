@@ -1,6 +1,6 @@
 # LVLM
 
-This is a code repository of LVLM component for [RAVEN](https://github.com/castacks/RAVEN). It serves two purposes: LVLM-behavior strategy of RAVEN and the standalone FPV+LVLM baseline.
+This repository contains the LVLM component for [RAVEN](https://github.com/castacks/RAVEN). It serves two purposes: (1) the LVLM-based behavior strategy used in RAVEN, and (2) the standalone FPV + LVLM baseline.
 
 ## Docker Setup
 
