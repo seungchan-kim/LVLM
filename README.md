@@ -28,7 +28,7 @@ Follow the instructions in [RAVEN](https://github.com/castacks/RAVEN/blob/main/R
 
 This setup requires AirStack for simulation and the autonomy stack, as well as a RayFronts container for input prompting.
 
-Start AirStack following the instructions in the [RAVEN README](https://github.com/castacks/RAVEN/blob/main/README.md#L77).
+Start AirStack following the instructions in the [RAVEN](https://github.com/castacks/RAVEN/blob/main/README.md). 
 
 Then start a RayFronts container:
 
