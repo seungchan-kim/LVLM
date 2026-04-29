@@ -31,7 +31,7 @@ class Planner(Node):
         self.image_sub = self.create_subscription(Image, '/robot_1/sensors/front_stereo/left/image_rect', self.image_callback, 10)
         self.odom_sub = self.create_subscription(Odometry, '/robot_1/odometry_conversion/odometry', self.odom_callback, 10)
         self.output_pub = self.create_publisher(Path, '/robot_1/global_plan', 10)
-        self.prompt_sub = self.create_subscription(String, '/input_prompt', self.target_object_callback, 10)
+        self.prompt_sub = self.create_subscription(String, '/input_text', self.target_object_callback, 10)
         self.frame_memory = deque(maxlen=5)
         self.pose_memory = deque(maxlen=200)
         self.src2rdf_transform = self.mat_3x3_to_4x4(self.get_coord_system_transform("flu", "rdf"))
