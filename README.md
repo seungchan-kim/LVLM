@@ -19,3 +19,26 @@ the required pretrained models will be downloaded automatically. To avoid downlo
     docker commit <container_id> lvlm:latest
 
 This will save the downloaded pretrained models inside the existing `lvlm:latest` Docker image.
+
+## Run LVLM-Guided Search Behavior
+
+Follow the instructions in [RAVEN](https://github.com/castacks/RAVEN/blob/main/README.md).
+
+## Run FPV + LVLM Baseline
+
+This setup requires AirStack for simulation and the autonomy stack, as well as a RayFronts container for input prompting.
+
+Start AirStack following the instructions in the[RAVEN README](https://github.com/castacks/RAVEN/blob/ea742b6843a40b82af7fa1ee37a99b2fe93a70a4/README.md?plain=1#L77).
+
+Then start a RayFronts container:
+
+    cd ~/RAVEN/RayFronts
+    ./run_docker.sh
+
+Alternatively, if a RayFronts container is already running, you can enter it with:
+
+    docker exec -it rayfronts_container bash
+
+Finally, inside the LVLM container, run:
+
+    python3 baseline.py
