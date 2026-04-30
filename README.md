@@ -39,6 +39,14 @@ Alternatively, if a RayFronts container is already running, you can enter it wit
 
     docker exec -it rayfronts_container bash
 
-Finally, inside the LVLM container, run:
+Inside the rayfront container,
+
+    python3 input_prompt.py
+
+Finally, on another terminal, start LVLM docker: 
+
+    ./run_lvlm_docker.sh
+
+and inside the LVLM container, run:
 
     python3 baseline.py
